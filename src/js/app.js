@@ -90,7 +90,7 @@ function init() {
   const hljs = require("highlight.js");
   hljs.initHighlightingOnLoad();
 
-  const q = questionsList[2];
-  // DOMSelectors.code.innerHTML = q.content;
+  const q = questionsList[1];
+  DOMSelectors.code.innerHTML = q.content;
 }
 init();
