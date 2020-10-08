@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="../node_modules/highlight.js/styles/default.css">
-  <link rel="stylesheet" href="scss/style.scss">
-  <title>Javascript Quiz</title>
-</head>
-<body>
-  <div class="start container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/highlight.js/styles/default.css"
+    />
+    <link rel="stylesheet" href="css/cover.css" />
+    <link rel="stylesheet" href="scss/style.scss" />
+    <title>Javascript Quiz</title>
+  </head>
+  <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand font-weight-bold">JavaScript Quiz</h3>
+          <h4 class="nav-masthead mb-0 font-italic">Take the Quiz!</h4>
+        </div>
+      </header>
 
-  </div>
-  <div class="quiz container">
-    <!-- <pre class="code-block javascript">
-      <code></code>
-    </pre> -->
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
-</body>
+      <main role="main" class="inner cover text-center start-page">
+        <h1 class="cover-heading font-weight-bolder display-4">
+          The JavaScript Quiz.
+        </h1>
+        <p class="lead">
+          Do you have what it takes to be a JavaScript expert? Find out using
+          this quiz!
+        </p>
+        <hr />
+        <p class="lead">
+          <a
+            href="question.html"
+            class="btn btn-lg btn-primary"
+            id="start-quiz-btn"
+            >Start Quiz</a
+          >
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>
+            Created by <span>Richard So</span> and <span>Edis Gonuler</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

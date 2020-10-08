@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/highlight.js/styles/default.css"
+    />
+    <link rel="stylesheet" href="css/cover.css" />
+    <link rel="stylesheet" href="scss/style.scss" />
+    <title>JavaScript Quiz</title>
+  </head>
+  <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand font-weight-bold">JavaScript Quiz</h3>
+          <h3 class="nav-masthead mb-0" id="question-number"></h3>
+        </div>
+      </header>
+      <main role="main" class="inner cover start-page" id="content">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 0"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+
+        <div class="question-container">
+          <pre class="code-block text-left"><code></code></pre>
+        </div>
+
+        <div class="choices_container form-check">
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="option-choice-1"
+              name="customRadio"
+              class="custom-control-input form-check-input"
+              value="0"
+            />
+            <label
+              class="custom-control-label form-check-label option-choice-1"
+              for="option-choice-1"
+            ></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="option-choice-2"
+              name="customRadio"
+              class="custom-control-input form-check-input"
+              value="1"
+            />
+            <label
+              class="custom-control-label form-check-label option-choice-2"
+              for="option-choice-2"
+            ></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="option-choice-3"
+              name="customRadio"
+              class="custom-control-input form-check-input"
+              value="2"
+            />
+            <label
+              class="custom-control-label form-check-label option-choice-3"
+              for="option-choice-3"
+            ></label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="option-choice-4"
+              name="customRadio"
+              class="custom-control-input form-check-input"
+              value="3"
+            />
+            <label
+              class="custom-control-label form-check-label option-choice-4"
+              for="option-choice-4"
+            ></label>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-lg btn-primary" id="submit-btn">Submit</a>
+        </div>
+      </main>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>
+            Created by <span>Richard So</span> and <span>Edis Gonuler</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="js/app.js" rel="script"></script>
+</html>
