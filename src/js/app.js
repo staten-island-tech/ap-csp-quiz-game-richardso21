@@ -7,6 +7,7 @@ const DOMSelectors = {
 
   customRadio: document.querySelectorAll('input[name="customRadio"]'),
   labels: document.querySelectorAll('.custom-control-label'),
+  progressBar: document.querySelector('.progress-bar'),
 
   code: document.querySelector(".code-block code")
 };

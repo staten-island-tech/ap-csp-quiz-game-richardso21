@@ -18,6 +18,11 @@ class Quiz {
         DOMSelectors.code.innerHTML = this.questionList[this.current].content
 
 
+        const progress = ((this.current)/ this.questionList.length) * 100
+
+        // set progress bar to
+        DOMSelectors.progressBar.style.width = `${progress}%`
+
     }
 
     nextQuestion(userChoice) {
