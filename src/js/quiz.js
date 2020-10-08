@@ -34,9 +34,6 @@ class Quiz {
     const progress = (this.current / this.questionList.length) * 100;
 
     DOMSelectors.progressBar.style.width = `${progress}%`;
-
-    // moves to next question
-    // nextQuestion(userChoice, callBack) {}
   }
 
   nextQuestion(userChoice, callback) {

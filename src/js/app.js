@@ -10,7 +10,7 @@ const DOMSelectors = {
   labels: document.querySelectorAll(".custom-control-label"),
   progressBar: document.querySelector(".progress-bar"),
 
-  code: document.querySelector(".code-block code"),
+  code: document.querySelector(".code-block code")
 };
 
 function init() {
@@ -21,6 +21,7 @@ function init() {
   // start quiz
   startQuiz();
 }
+
 
 function startQuiz() {
   // create quiz instance
@@ -46,10 +47,15 @@ function startQuiz() {
 
     quiz.nextQuestion(selectedValue, function(result){
       // if no more questions send results
-      DOMSelectors.mainContainer.innerHTML = `<h1 class="text-center">${result}</h1>`;
+      DOMSelectors.mainContainer.innerHTML = `
+          <h1 class="text-center score-text">${result}</h1>
+          <div class="text-center">
+          <a href="../question.html" class="btn btn-lg btn-primary" id="play-again-btn">Retake the Quiz</a>
+        </div>`
     });
   });
 }
+
 
 init();
 
