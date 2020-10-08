@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+    />
+    <link
+            rel="stylesheet"
+            href="../node_modules/highlight.js/styles/default.css"
+    />
+    <link
+            rel="stylesheet"
+            href="../node_modules/highlight.js/styles/default.css"
+    />
+    <link rel="stylesheet" href="scss/style.scss"/>
+    <link rel="stylesheet" href="css/cover.css"/>
+    <title>JavaScript Quiz</title>
+</head>
+<body>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main role="main" class="inner cover  start-page">
+        <h1 class="text-center" id="question-number"></h1>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                 aria-valuemax="100"></div>
+        </div>
+
+        <div class="question-container">
+            <pre class="code-block text-left"><code>Hello World</code></pre>
+        </div>
+
+        <div class="choices_container">
+        <div class="custom-control custom-radio">
+            <input type="radio" id="option-choice-1" name="customRadio" class="custom-control-input" value="0">
+            <label class="custom-control-label option-choice-1" for="option-choice-1">Toggle this custom radio</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="option-choice-2" name="customRadio" class="custom-control-input" value="1">
+            <label class="custom-control-label option-choice-2" for="option-choice-2">Or toggle this other custom radio</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="option-choice-3" name="customRadio" class="custom-control-input" value="2">
+            <label class="custom-control-label option-choice-3" for="option-choice-3">Toggle this custom radio</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="option-choice-4" name="customRadio" class="custom-control-input" value="3">
+            <label class="custom-control-label option-choice-4" for="option-choice-4">Or toggle this other custom radio</label>
+        </div>
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn btn-lg btn-primary" id="submit-btn">Submit</a>
+        </div>
+    </main>
+</div>
+</body>
+<script src="js/app.js" rel="script"></script>
+</html>
