@@ -44,7 +44,10 @@ function startQuiz() {
     // go to next question, and at the end show results
     selectedValue = parseInt(selectedValue);
 
-    quiz.nextQuestion(selectedValue);
+    quiz.nextQuestion(selectedValue, function(result){
+      // if no more questions send results
+      DOMSelectors.mainContainer.innerHTML = `<h1 class="text-center">${result}</h1>`;
+    });
   });
 }
 
