@@ -48,8 +48,8 @@ function startQuiz() {
     quiz.nextQuestion(selectedValue, function(result){
       // if no more questions send results
       DOMSelectors.mainContainer.innerHTML = `
-          <h1 class="text-center score-text">${result}</h1>
-          <div class="text-center">
+        <h1 class="text-center score-text">${result}</h1>
+        <div class="text-center">
           <a href="../question.html" class="btn btn-lg btn-primary" id="play-again-btn">Retake the Quiz</a>
         </div>`
     });
