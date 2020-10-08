@@ -19,6 +19,7 @@ class Quiz {
     const highlighted_code = hljs.highlightAuto(
       this.questionList[this.current].content
     ).value;
+
     DOMSelectors.code.innerHTML = highlighted_code;
 
     // insert question answer choices
@@ -33,27 +34,25 @@ class Quiz {
     const progress = (this.current / this.questionList.length) * 100;
 
     DOMSelectors.progressBar.style.width = `${progress}%`;
-
-    // moves to next question
-    // nextQuestion(userChoice, callBack) {}
   }
 
-  nextQuestion(userChoice) {
-    // score check should occur
-    if (this.questionList[this.current].check(userChoice)) {
-      this.score += 1;
-    }
-
+  nextQuestion(userChoice, callback) {
     if (this.current !== this.questionList.length - 1) {
-      // current question should change by one
-      this.current += 1;
+      // score check should occur
+      if (this.questionList[this.current].check(userChoice)) {
+        this.score += 1;
+      }
 
-      // change html on page for next question
-      this.showQuestion();
-    } else {
-      // if no more questions send results
+      if (this.current !== this.questionList.length - 1) {
+        // current question should change by one
+        this.current += 1;
+
+        // change html on page for next question
+        this.showQuestion();
+      }
+    }else {
       const result = `${this.score + 1}/${this.questionList.length}`;
-      DOMSelectors.mainContainer.innerHTML = `<h1 class="text-center">${result}</h1>`;
+      callback(result);
     }
   }
 
