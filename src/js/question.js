@@ -5,6 +5,7 @@ class Question {
         this.answer = answer;
     }
 
+    // compares user answer with real answer
     check(user_choice){
         return user_choice === this.answer;
     }
