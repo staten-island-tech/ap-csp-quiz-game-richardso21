@@ -1,0 +1,42 @@
+[
+  {
+    "content": "console.log('cat')",
+    "choices": ["dog", "cat", "10", "console.log('cat')"],
+    "answer": 1
+  },
+  {
+    "content": "const x = 5;\nconst y = 10;\nconsole.log(x + y / 2);",
+    "choices": ["10", "7.5", "5", "2"],
+    "answer": 0
+  },
+  {
+    "content": "const a = 102;\nconst b = 2 * a;\nconsole.log(2 * (a + b));",
+    "choices": ["102", "204", "306", "612"],
+    "answer": 3
+  },
+  {
+    "content": "const h = 24;\nconst i = \"10\";\nconsole.log(h + i);",
+    "choices": ["34", "SyntaxError", "2410", "1024"],
+    "answer": 2
+  },
+  {
+    "content": "const x = 5;\nconst y = (x) => (x * x);\nconst z = (a, b) => (a**2 + b*2);\nconsole.log(x + z(x, y(x)));",
+    "choices": ["InternalError", "5", "256", "80"],
+    "answer": 3
+  },
+  {
+    "content": "function a() {\n  return 1;\n};\nconst b = a;\nconsole.log(b());",
+    "choices": ["0", "1", "SyntaxError", "b"],
+    "answer": 1
+  },
+  {
+    "content": "console.log([] == 0);",
+    "choices": ["true", "false", "SyntaxError", "InternalError"],
+    "answer": 0
+  },
+  {
+    "content": "console.log(log(console.log()))",
+    "choices": ["SyntaxError", "InternalError", "undefined", "console.log()"],
+    "answer": 0
+  }
+]

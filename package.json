@@ -1,0 +1,28 @@
+{
+  "name": "ap-csp-quiz-game-richardso21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staten-island-tech/ap-csp-quiz-game-richardso21.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staten-island-tech/ap-csp-quiz-game-richardso21/issues"
+  },
+  "homepage": "https://github.com/staten-island-tech/ap-csp-quiz-game-richardso21#readme",
+  "dependencies": {
+    "highlight.js": "^10.2.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.26.12"
+  }
+}
